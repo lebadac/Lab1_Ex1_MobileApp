@@ -19,7 +19,8 @@ fun SkillsSection() {
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp),
-        elevation = CardDefaults.cardElevation(4.dp)
+        elevation = CardDefaults.cardElevation(4.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFF3E5F5)) // Background color
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(text = "Skills", fontSize = 20.sp, fontWeight = FontWeight.Bold)
@@ -34,3 +35,4 @@ fun SkillsSection() {
         }
     }
 }
+

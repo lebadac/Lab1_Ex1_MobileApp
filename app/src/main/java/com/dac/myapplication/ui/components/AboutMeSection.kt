@@ -21,7 +21,7 @@ fun AboutMeSection() {
             .padding(16.dp),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(8.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFEDE7F6)) // Light background color
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFF3E5F5)) // Light background color
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(

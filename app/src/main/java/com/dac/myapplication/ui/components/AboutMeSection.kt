@@ -10,7 +10,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.font.FontWeight
 
-
+/**
+ * Displays the "About Me" section with a title, a blue divider, and descriptive text.
+ */
 @Composable
 fun AboutMeSection() {
     Card(
@@ -19,7 +21,7 @@ fun AboutMeSection() {
             .padding(16.dp),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(8.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFEDE7F6)) // Màu nền nhạt
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFEDE7F6)) // Light background color
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(
@@ -28,9 +30,9 @@ fun AboutMeSection() {
                 fontWeight = FontWeight.Bold
             )
 
-            // Đường gạch màu xanh
+            // Blue divider line
             Divider(
-                color = Color(0xFF1E88E5), // Màu xanh dương
+                color = Color(0xFF1E88E5), // Blue color
                 thickness = 2.dp,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -46,4 +48,3 @@ fun AboutMeSection() {
         }
     }
 }
-

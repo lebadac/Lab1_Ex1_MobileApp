@@ -9,7 +9,10 @@ import com.dac.myapplication.ui.components.CVScreen
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.fillMaxSize
 
-
+/**
+ * MainActivity serves as the entry point of the application.
+ * It sets up the UI with a MaterialTheme and displays the CVScreen.
+ */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

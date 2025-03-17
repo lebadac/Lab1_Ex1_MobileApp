@@ -11,10 +11,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * EducationSection displays the educational background of the user.
+ * It includes a title, a blue underline, and details about the major and university.
+ */
 @Composable
 fun EducationSection() {
     Card(
-        modifier = Modifier.fillMaxWidth().padding(16.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(containerColor = Color(0xFFF3E5F5))
     ) {
@@ -26,7 +32,7 @@ fun EducationSection() {
             )
             Spacer(modifier = Modifier.height(4.dp))
             Canvas(modifier = Modifier.fillMaxWidth().height(2.dp)) {
-                drawRect(color = Color(0xFF2196F3)) // Đường gạch màu xanh
+                drawRect(color = Color(0xFF2196F3)) // Blue underline
             }
             Spacer(modifier = Modifier.height(8.dp))
             Text(

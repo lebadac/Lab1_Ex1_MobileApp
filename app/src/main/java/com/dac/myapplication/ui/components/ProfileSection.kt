@@ -25,7 +25,8 @@ fun ProfileSection() {
             .fillMaxWidth()
             .padding(horizontal = 16.dp),
         shape = RoundedCornerShape(16.dp),
-        elevation = CardDefaults.cardElevation(8.dp)
+        elevation = CardDefaults.cardElevation(8.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFF3E5F5)) // Background color
     ) {
         Row(
             modifier = Modifier.padding(16.dp),

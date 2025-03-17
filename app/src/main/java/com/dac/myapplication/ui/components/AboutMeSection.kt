@@ -27,7 +27,7 @@ fun AboutMeSection() {
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold
             )
-`
+
             // Đường gạch màu xanh
             Divider(
                 color = Color(0xFF1E88E5), // Màu xanh dương

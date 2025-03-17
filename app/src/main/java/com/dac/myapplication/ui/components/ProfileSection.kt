@@ -15,10 +15,15 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.graphics.Color
 import com.dac.myapplication.R
 
+/**
+ * ProfileSection displays the user's profile information, including name, job title, and profile picture.
+ */
 @Composable
 fun ProfileSection() {
     Card(
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(8.dp)
     ) {
@@ -42,7 +47,9 @@ fun ProfileSection() {
             Image(
                 painter = painterResource(id = R.drawable.image),
                 contentDescription = "Profile Picture",
-                modifier = Modifier.size(120.dp).padding(start = 16.dp),
+                modifier = Modifier
+                    .size(120.dp)
+                    .padding(start = 16.dp),
                 contentScale = ContentScale.Crop
             )
         }
